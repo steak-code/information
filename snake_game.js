@@ -55,7 +55,6 @@ function start() {
   main();
 }
 
-
 // main function called repeatedly to keep the game running
 function main() {
 
@@ -64,7 +63,6 @@ function main() {
           window.alert("GAME OVER");
       return;
     }
-    
 
     changing_direction = false;
     setTimeout(function onTick() {
@@ -76,7 +74,6 @@ function main() {
     main();
   }, 45)
 }
-
 
 function restart() {
   timenow = 10;
@@ -199,7 +196,6 @@ function change_direction(event) {
   }
 }
 
-
 function move_snake() {
   // Create the new Snake's head
   const head = {x: snake[0].x + dx, y: snake[0].y + dy};
@@ -220,4 +216,3 @@ function move_snake() {
     snake.pop();
   }
 }
-
