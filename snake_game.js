@@ -6,7 +6,6 @@ const snake_border = 'lightblue';
 // var time_last;
 var timenow = 10;
 
-
 function countdown(){
   a = setInterval(function(){ sec() }, 1000);
 }
