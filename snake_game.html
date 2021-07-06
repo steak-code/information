@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Snake Game</title>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <div id="score">0</div>
+    <div id="b">
+      <button onclick="start()">start</button>
+      <br><br>
+      <button onclick="restart()">restart</button>
+    </div>  
+    <div id="c"><canvas id="snakeboard" width="400" height="400"></canvas></div>
+    <p id="t">倒數計時</p>
+    <div id="second">10</div>
+    
+    
+    <style>
+      #snakeboard {
+        position: absolute;
+        top: 47%;   
+        left: 52%;
+        transform: translate(-50%, -50%);
+        
+      }
+      #score {
+        text-align: center;
+        font-size: 200px;
+        color: whitesmoke;
+        
+      }
+      #t {
+        text-align: left;
+        font-size: 60px;
+        color: white;
+        margin: 0% 10%;
+      }
+      #second {
+        text-align: left;
+        font-size: 100px;
+        color: white;
+        margin: 2% 10%;
+      }
+      button {
+        color: turquoise;
+        font-size: 50px;
+        background-color: black;
+        border-radius: 20px;
+        font-family: Cursive;
+        text-shadow: 5px 5px rgb(43, 255, 0);
+      }
+      body {
+        background-image: url('7.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      #b {
+        margin: 5% 67%;
+      }
+     </style>
+
+    <script src="snake_game.js"></script>
+    
+  </body>
+</html>
