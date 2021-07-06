@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>隨機號碼抽籤器</h1>
+
+<form id="Form">
+  <label>請輸入起始號碼</label>
+  <input type="text"><br><br>
+  <label>請輸入終止號碼</label>
+  <input type="text"><br><br>
+</form> 
+
+<button onclick="Function2()">抽一波</button>
+
+
+<p>本次抽中的號碼：<span id="demo"></span></p>
+
+<script>
+
+function Function2() {
+  var y = document.getElementById("Form").elements.item(0).value;
+  var z = document.getElementById("Form").elements.item(1).value;
+  document.getElementById("demo").innerHTML = Math.floor(Math.random() * (Number(z) -Number(y)+1) + Number(y));
+ }
+
+</script>
+
+</body>
+</html>
