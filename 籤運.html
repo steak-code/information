@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>籤運</h1>
+
+<button onclick="Function2()">抽籤抽起來!</button>
+
+
+<p>今天宜：<span id="demo"></span></p>
+
+<script>
+var luck = ["喝汽水", "打球", "吃火鍋", "粗屬", "玩手遊", "睡覺", "寫作業", "考試"];
+function Function2() {
+    a = Math.floor(Math.random() * 8);
+    document.getElementById("demo").innerHTML = luck[a];
+}
+</script>
+
+</body>
+</html>
