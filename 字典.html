@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>超級字典</h1>
+
+<p>請輸入一句成語</p>
+<textarea id="TEXT" row="4" cols="50" style="resize:none;"></textarea><br>
+
+<button onclick="Function1()">解釋</button>
+
+<p>成語意思：<span id="demo1"></span></p>
+<br>
+
+<script>
+function Function1() {
+    var x = document.getElementById("TEXT").value;
+    var dict = {一敗如水:"形容失敗慘重", 一本萬利:"含貶義。常含諷刺意味。一般作定語、賓語", 一波三折:"比喻事情進行中意外的變化很多"};
+    document.getElementById("demo1").innerHTML = dict[x];
+    }
+</script>
+</body>
+</html>
