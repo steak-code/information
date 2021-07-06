@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>字數計算器3.0</h1>
+
+<p>請輸入一段文字來計算字數</p>
+<textarea id="TEXT" row="4" cols="50" style="resize:none;"></textarea><br>
+
+<button onclick="Function1()">精準計算</button>
+
+<p>總字數：<span id="demo1"></span></p>
+<br>
+
+<script>
+function Function1() {
+    var x = document.getElementById("TEXT").value;
+    document.getElementById("demo1").innerHTML = x.length;
+}
+</script>
+</body>
+</html>
