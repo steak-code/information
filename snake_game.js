@@ -3,7 +3,6 @@ const board_background = "white";
 const snake_col = 'white';
 const snake_border = 'lightblue';
 
-// var time_last;
 var timenow = 10;
 
 function countdown(){
@@ -50,7 +49,6 @@ document.addEventListener("keydown", change_direction);
 
 function start() {
   timenow = 10;
-  // time_last=timenow
   countdown();
   main();
 }
@@ -77,7 +75,6 @@ function main() {
 
 function restart() {
   timenow = 10;
-  // time_last = timenow;
   x = 10;
   score = 0;
   document.getElementById('score').innerHTML = score;
